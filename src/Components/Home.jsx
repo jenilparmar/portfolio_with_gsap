@@ -20,7 +20,7 @@ export default function Home() {
         x: 350,
         y: 350,
         rotate:98, // Move the plane to the upper top corner
-        duration: 1,
+        duration: 5,
        
         scrollTrigger: {
           trigger: "#earth", // Adjust the trigger if needed
@@ -57,14 +57,14 @@ export default function Home() {
   });
   return (
     <>
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden w-screen">
     <div className="z-10 plane w-20 h-20 inline bg-transparent absolute left-0 top-5 overflow-x-hidden" style={{
       backgroundImage:'url("https://iili.io/JpjV3HN.md.png" )',
       backgroundPosition:"center",
       backgroundSize:"contain",
       backgroundRepeat:'no-repeat'
     }}></div>
-      <div className="bg-black w-screen h-screen">
+      <div className="bg-black w-screen h-fit">
         <div
           className="bg-transparent w-screen h-full "
           id="earth"
@@ -76,6 +76,7 @@ export default function Home() {
             position:"absolute",
             top:"50%"
           }}></div>
+        
       </div>
     </div>
     </>
