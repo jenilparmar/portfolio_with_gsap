@@ -3,7 +3,7 @@ import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-export default function Home({state}) {
+export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.to(

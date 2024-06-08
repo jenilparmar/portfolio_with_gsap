@@ -4,11 +4,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 export default function Features({ setState }) {
   const containerRef = useRef(null);
-  useEffect(()=>{
-    setState(containerRef.current)
-  },[containerRef])
+  useEffect(() => {
+    setState(containerRef.current);
+  });
   const scrollref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
+  
   useGSAP(() => {
     gsap.from(".rounded-full", {
       scale: 0.5,
@@ -25,23 +26,28 @@ export default function Features({ setState }) {
       // repeat:-1,
       scrub: 1,
     });
-    gsap.from(".q", {
-      y: 20,
-      scale: 0.5,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".q",
-        // markers:true,
-        start: "top 60%",
-        end: "bottom center",
-        scrub: 1,
-      },
-    });
+    gsap
+      .timeline()
+      .from(".q", {
+        y: 20,
+        scale: 0.5,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".q",
+          // markers:true,
+          start: "top 60%",
+          end: "bottom center",
+        },
+      })
+      .to(".q", {
+        y: 50,
+        duration: 2,
+      });
     gsap.to(scrollref.current, {
       transform: "translate(-75%)",
       duration: 20,
-      
+
       scrollTrigger: {
         trigger: containerRef.current,
         scroller: "body",
@@ -111,7 +117,8 @@ export default function Features({ setState }) {
               <div
                 className="rounded-full w-24 self-center h-24"
                 style={{
-                  backgroundImage: "url(https://www.factfc.com/wp-content/uploads/2024/04/express-js.png)",
+                  backgroundImage:
+                    "url(https://www.factfc.com/wp-content/uploads/2024/04/express-js.png)",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                   boxShadow: "0px 0px 15px yellow",
@@ -131,7 +138,9 @@ export default function Features({ setState }) {
                 style={{
                   color: "green",
                 }}>
-                <div className="name-skill relative left-2 self-center">MongoDB</div>
+                <div className="name-skill relative left-2 self-center">
+                  MongoDB
+                </div>
               </div>
             </div>{" "}
           </div>
