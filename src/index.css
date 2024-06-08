@@ -37,7 +37,12 @@ h1{
 }
 .q{
     position: absolute;
-    top: 117%;
+    top: 125%;
     left: 35%;
     z-index: 50;
+}
+
+.ass{
+    position: absolute;
+    top: 130%;
 }
