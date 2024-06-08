@@ -16,7 +16,7 @@ export default function Astronous({container}) {
         duration:3,
         scrollTrigger:{
             trigger:'.container4',
-            markers:true,
+            // markers:true,
             start:"top 45%",
             end:"bottom 20%",
             scrub:2,
