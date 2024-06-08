@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Home from "./Components/Home";
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import NameIntro from "./Components/NameIntro";
-import Skills from "./Components/Skills";
-export default function App() {
-  return <>
-<NameIntro/>
-  <Home/>
-{/* <Skills/> */}
 
+import NameIntro from "./Components/NameIntro";
+import Features from "./Components/Features";
+
+export default function App() {
+  const [state, setState]=useState("fixed")
+  return <>
+
+  <div className="flex  flex-col">
+  <NameIntro/>
+  <Home state={state} />
+
+<Features setState={setState}/>
+  </div>
  
   
   {/* home intro page 

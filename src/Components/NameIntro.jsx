@@ -19,7 +19,7 @@ export default function NameIntro() {
 
     return (
         <div>
-            <div className=" text-white p-4 flex flex-col my-10">
+            <div className="z-50 text-white p-4 flex flex-col my-10">
                 
                     <div className="text-3xl  font-extrabold">I am</div>{" "}
                     <div className="x text-white text-4xl first-letter:text-blue-700 font-bold">Frontend developer</div>
