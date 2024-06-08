@@ -21,6 +21,20 @@ export default function Features({setState}) {
       // repeat:-1,
       scrub: 1,
     });
+    gsap.from(".q", {
+        y: 20,
+        scale:0.5,
+        opacity: 0,
+        duration: 1,
+      scrollTrigger:{
+        trigger:".q",
+        markers:true,
+        start:"top 60%",
+        end:"bottom center",
+        scrub: 1,
+      }
+
+      });
     gsap.to(scrollref.current, {
       transform:"translate(-75%)",
       duration: 20,
@@ -28,7 +42,7 @@ export default function Features({setState}) {
       scrollTrigger: {
         trigger: containerRef.current,
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 60%",
         end: "bottom 50%",
         scrub: 2,
@@ -40,6 +54,7 @@ export default function Features({setState}) {
 
   return (
     <>
+    <div className="q text-white text-5xl text-center font-bold" >Skills</div>
       <div
         ref={containerRef}
         className="container2 flex flex-row overflow-x-hidden  w-96 h-fit p-4  ">
