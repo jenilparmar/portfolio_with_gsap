@@ -12,12 +12,13 @@ export default function Astronous({container}) {
         x:-80
     },{
        x:350,
+       y:-200,
         duration:3,
         scrollTrigger:{
-            trigger:container,
-            // markers:true,
-            start:"-50% 40%",
-            end:"bottom 60%",
+            trigger:'.container4',
+            markers:true,
+            start:"top 45%",
+            end:"bottom 20%",
             scrub:2,
             pin:true
         },
@@ -27,7 +28,8 @@ export default function Astronous({container}) {
 
   return (
 
-     <div
+    <div className="container4 w-screen h-20">
+         <div
       className="ass bg-transparent w-20 h-20"
       id="ass"
       style={{
@@ -37,5 +39,6 @@ export default function Astronous({container}) {
       }}
     ></div>
 
+    </div>
   );
 }
