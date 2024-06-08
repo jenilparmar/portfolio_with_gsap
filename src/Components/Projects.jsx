@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
 export default function Projects() {
   gsap.registerPlugin(ScrollTrigger);
+  const images = {
+    1:'https://iili.io/Jp6GP7S.md.png',
+    2:"https://iili.io/Jp6jtQ1.md.png",
+    3:"https://iili.io/Jp6NqNV.md.png"
+  }
+
+
   useEffect(() => {
     // Get all elements with the same class
     const elements = document.querySelectorAll(".project");
@@ -33,6 +40,7 @@ export default function Projects() {
       })
     });
   }, []);
+
   useGSAP(()=>{
    
     gsap.from('.projects',{
@@ -54,9 +62,15 @@ export default function Projects() {
        }}>
        <div className='projects text-3xl font-semibold text-white'>Projects</div>
     <div className='project w-screen overflow-x-hidden h-fit justify-start gap-4 flex flex-row'>
-        <div className='bg-black w-28 self-center flex flex-col h-32 border-2 border-blue-700 mx-2 rounded-md'>
-        <div className='w-full h-24 bg-white'></div>
-        <div></div>
+        <div className='bg-black w-24 self-center justify-center z-10 flex flex-col h-36  mx-2 rounded-md'>
+        <div className='photo w-full h-full bg-black self-center' 
+        style={{
+            backgroundImage:`url(${"https://iili.io/Jp6gT9n.png"})`,
+            backgroundPosition:"center",
+            backgroundSize:"contain",
+            backgroundRepeat:"no-repeat"
+        }}></div>
+    
         </div>
         <div className='two w-40 h-fit self-center flex flex-col gap-2'>
             <div className='text-2xl text-white text-nowrap p-2 font-medium first-letter:text-yellow-500'>Social-Media</div>
@@ -84,12 +98,28 @@ export default function Projects() {
                     <li className='list-disc '>Finance management</li>
                 </ul>
             </div>
-            <button className='text-red-600 w-24 border-red-600 active:bg-red-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
+            <button className='text-red-600 w-24 border-red-600 active:bg-red-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
         </div>
-        <div className='bg-black w-28 self-center h-32 border-2 border-blue-700 relative left-12 rounded-md'></div>
+        <div className='bg-black w-28 self-center h-32 relative left-12 rounded-md' style={{
+       
+            backgroundImage:`url(${"https://iili.io/Jp6gaP2.png"})`,
+            backgroundPosition:"center",
+            backgroundSize:"contain",
+            backgroundRepeat:"no-repeat"
+        }}></div>
     </div>
     <div className='project w-screen overflow-x-hidden h-fit justify-start gap-4 flex flex-row'>
-        <div className='bg-black w-28 self-center h-32 border-2 border-blue-700 mx-2 rounded-md'></div>
+    <div className='bg-black w-24 self-center justify-center z-10 flex flex-col h-36  mx-2 rounded-md'>
+        <div className='photo w-full h-full bg-black self-center' 
+        style={{
+            // "https://iili.io/Jp6gaP2.png"
+            backgroundImage:`url(${"https://iili.io/Jp6gmDG.png"  })`,
+            backgroundPosition:"center",
+            backgroundSize:"contain",
+            backgroundRepeat:"no-repeat"
+        }}></div>
+    
+        </div>
         <div className='two w-40 h-fit self-center flex flex-col gap-2'>
             <div className='text-2xl text-white text-nowrap p-2 font-medium first-letter:text-green-600'>Wedding Web</div>
             <div className='underline w-0 bg-green-600 -my-3 relative -top-1 mx-2 rounded-sm h-0.5'></div>
@@ -117,10 +147,24 @@ export default function Projects() {
             </div>
             <button className='text-pink-600 w-24 border-pink-600 active:bg-pink-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
         </div>
-        <div className='bg-black w-28 self-center h-32 border-2 border-blue-700 relative left-12 rounded-md'></div>
+        <div className='bg-black w-28 self-center h-32 relative left-12 rounded-md'
+        style={{
+            // "https://iili.io/Jp6gaP2.png"
+            backgroundImage:`url(${"https://iili.io/Jp6r812.md.png" })`,
+            backgroundPosition:"center",
+            backgroundSize:"contain",
+            backgroundRepeat:"no-repeat"
+        }}></div>
     </div>
     <div className='project w-screen overflow-x-hidden h-fit justify-start gap-4 flex flex-row'>
-        <div className='bg-black w-28 self-center h-32 border-2 border-blue-700 mx-2 rounded-md'></div>
+        <div className='bg-black w-28 self-center h-32 mx-2 rounded-md'
+        style={{
+            // "https://iili.io/Jp6gaP2.png"
+            backgroundImage:`url(${"https://iili.io/Jp6r55F.png"})`,
+            backgroundPosition:"center",
+            backgroundSize:"contain",
+            backgroundRepeat:"no-repeat"
+        }}></div>
         <div className='two w-40 h-fit self-center flex flex-col gap-2'>
             <div className='text-2xl text-white  p-2 font-medium first-letter:text-blue-600'>Hospital Management</div>
             <div className='underline w-0 bg-blue-600 -my-3 relative -top-1 mx-2 rounded-sm h-0.5'></div>

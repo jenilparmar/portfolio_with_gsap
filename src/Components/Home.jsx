@@ -10,14 +10,15 @@ export default function Home() {
       ".plane",
 
       {
-        y: 2000,
+        y: 3000,
         // rotate: 175, // Move the plane to the upper top corner
-        duration: 5,
+        duration: 10,
 
         scrollTrigger: {
           trigger: "#earth",
           // markers:true, // Adjust the trigger if needed
-          start: "top 70%", // Start the animation when the element is at the top 50% of the viewport
+          start: "top 70%",
+          end :"bottom -150%", // Start the animation when the element is at the top 50% of the viewport
           // end: "top 100%", // End the animation when the element is at the top 30% of the viewport
           scrub: 2,
         },
