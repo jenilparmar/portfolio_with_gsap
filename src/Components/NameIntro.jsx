@@ -17,7 +17,7 @@ export default function NameIntro() {
       scrollTrigger:{
         trigger:".wp",
         // markers:true,
-        start:"67% 40%",
+        start:"75% 40%",
         end:"bottom 20%",
         scrub:2,
         pin:true

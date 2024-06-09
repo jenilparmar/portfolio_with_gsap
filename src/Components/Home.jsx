@@ -87,7 +87,7 @@ export default function Home() {
     <>
       <div className=" w-screen h-fit flex flex-col">
         <div
-          className="z-10 plane w-20 h-20 inline bg-transparent absolute  left-0 -top-20 overflow-x-hidden"
+          className="z-50 plane w-20 h-20 inline bg-transparent absolute  left-0 -top-20 overflow-x-hidden"
           style={{
             backgroundImage: 'url("https://iili.io/JpjV3HN.md.png" )',
             backgroundPosition: "center",
