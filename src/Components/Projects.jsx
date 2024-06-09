@@ -62,8 +62,8 @@ export default function Projects() {
        }}>
        <div className='projects text-3xl font-semibold text-white'>Projects</div>
     <div className='project w-screen overflow-x-hidden h-fit justify-start gap-4 flex flex-row'>
-        <div className='bg-black w-24 self-center justify-center z-10 flex flex-col h-36  mx-2 rounded-md'>
-        <div className='photo w-full h-full bg-black self-center' 
+        <div className='bg-transparent w-24 self-center justify-center z-10 flex flex-col h-36  mx-2 rounded-md'>
+        <div className='photo w-full h-full bg-transparent self-center' 
         style={{
             backgroundImage:`url(${"https://iili.io/Jp6gT9n.png"})`,
             backgroundPosition:"center",
@@ -84,7 +84,7 @@ export default function Projects() {
                 </ul>
             </div>
             <a href='https://www.linkedin.com/feed/update/urn:li:activity:7204103308611850240/'>
-            <button className='text-yellow-500 w-24 border-yellow-500 active:bg-yellow-500 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
+            <button className='text-yellow-500 w-24 border-yellow-500 active:bg-yellow-500 transition-active duration-100 active:text-transparent self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
             </a>
         </div>
     </div>
@@ -101,10 +101,10 @@ export default function Projects() {
                 </ul>
             </div>
             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7181125711003348992/">
-            <button className='text-red-600 w-24 border-red-600 active:bg-red-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
+            <button className='text-red-600 w-24 border-red-600 active:bg-red-600 transition-active duration-100 active:text-transparent self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
             </a>
         </div>
-        <div className='bg-black w-28 self-center h-32 relative left-12 rounded-md' style={{
+        <div className='bg-transparent w-28 self-center h-32 relative left-12 rounded-md' style={{
        
             backgroundImage:`url(${"https://iili.io/Jp6gaP2.png"})`,
             backgroundPosition:"center",
@@ -113,8 +113,8 @@ export default function Projects() {
         }}></div>
     </div>
     <div className='project w-screen overflow-x-hidden h-fit justify-start gap-4 flex flex-row'>
-    <div className='bg-black w-24 self-center justify-center z-10 flex flex-col h-36  mx-2 rounded-md'>
-        <div className='photo w-full h-full bg-black self-center' 
+    <div className='bg-transparent w-24 self-center justify-center z-10 flex flex-col h-36  mx-2 rounded-md'>
+        <div className='photo w-full h-full bg-transparent self-center' 
         style={{
             // "https://iili.io/Jp6gaP2.png"
             backgroundImage:`url(${"https://iili.io/Jp6gmDG.png"  })`,
@@ -135,7 +135,7 @@ export default function Projects() {
                 </ul>
             </div>
             <a href="https://jenilparmar.github.io/wedding--2/">
-            <button className='text-green-600 w-24 border-green-600 active:bg-green-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
+            <button className='text-green-600 w-24 border-green-600 active:bg-green-600 transition-active duration-100 active:text-transparent self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
             </a>
         </div>
     </div>
@@ -152,10 +152,10 @@ export default function Projects() {
                 </ul>
             </div>
             <a href="https://exlavya.vercel.app/">
-            <button className='text-pink-600 w-24 border-pink-600 active:bg-pink-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
+            <button className='text-pink-600 w-24 border-pink-600 active:bg-pink-600 transition-active duration-100 active:text-transparent self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
             </a>
         </div>
-        <div className='bg-black w-28 self-center h-32 relative left-12 rounded-md'
+        <div className='bg-transparent w-28 self-center h-32 relative left-12 rounded-md'
         style={{
             // "https://iili.io/Jp6gaP2.png"
             backgroundImage:`url(${"https://iili.io/Jp6r812.md.png" })`,
@@ -165,7 +165,7 @@ export default function Projects() {
         }}></div>
     </div>
     <div className='project w-screen overflow-x-hidden h-fit justify-start gap-4 flex flex-row'>
-        <div className='bg-black w-28 self-center h-32 mx-2 rounded-md'
+        <div className='bg-transparent w-28 self-center h-32 mx-2 rounded-md'
         style={{
             // "https://iili.io/Jp6gaP2.png"
             backgroundImage:`url(${"https://iili.io/Jp6r55F.png"})`,
@@ -183,7 +183,7 @@ export default function Projects() {
                 </ul>
             </div>
             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7165248291171885057/">
-            <button className='text-blue-600 w-24 border-blue-600 active:bg-blue-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
+            <button className='text-blue-600 w-24 border-blue-600 active:bg-blue-600 transition-active duration-100 active:text-transparent self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
             </a>
         </div>
     </div>

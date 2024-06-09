@@ -65,7 +65,7 @@ export default function Features({ setState }) {
       <div className="q text-white text-5xl text-center font-bold">Skills</div>
       <div
         ref={containerRef}
-        className="container2 flex flex-row overflow-x-hidden  w-96 h-fit p-4  ">
+        className="container2 bg-transparent flex flex-row overflow-x-hidden  w-96 h-fit p-4  ">
         <div ref={scrollref} className="flex flex-row w-fit">
           <div className="scol flex flex-col">
             <div className="skills flex flex-row  w-screen justify-center h-32 my-2">

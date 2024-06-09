@@ -3,6 +3,7 @@
 @tailwind utilities;
 *{
     background-color: black;
+    background-image: url("https://iili.io/JpyFf07.gif");
 }
 
 #skill{

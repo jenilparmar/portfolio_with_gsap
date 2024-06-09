@@ -46,7 +46,7 @@ export default function Home() {
     planeTimeline
       .to(".plane", {
         y: 3050,
-        duration: 10,
+        duration: 100,
       })
       .to(".plane", {
         rotate: -45,
