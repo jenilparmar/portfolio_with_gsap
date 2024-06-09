@@ -6,24 +6,60 @@ import { useGSAP } from "@gsap/react";
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
-    gsap.to(
-      ".plane",
+    // gsap.timeline().to(
+    //   ".plane",
+    //   {
+    //     y: 3000,
+    //     // rotate: 175, // Move the plane to the upper top corner
+    //     duration: 10,
 
-      {
-        y: 3000,
-        // rotate: 175, // Move the plane to the upper top corner
-        duration: 10,
+    //     scrollTrigger: {
+    //       trigger: "#earth",
+    //       // markers:true, // Adjust the trigger if needed
+    //       start: "top 70%",
+    //       end :"bottom -150%", // Start the animation when the element is at the top 50% of the viewport
+    //       // end: "top 100%", // End the animation when the element is at the top 30% of the viewport
+    //       scrub: 2,
+    //     },
+    //   }
 
-        scrollTrigger: {
-          trigger: "#earth",
-          // markers:true, // Adjust the trigger if needed
-          start: "top 70%",
-          end :"bottom -150%", // Start the animation when the element is at the top 50% of the viewport
-          // end: "top 100%", // End the animation when the element is at the top 30% of the viewport
-          scrub: 2,
-        },
+    // ).to('.plane',{
+    //   paused:true,
+    //   rotate:90,
+    //   duration:2,
+    //   // scrollTrigger:{
+    //   //   trigger:'.projects',
+    //   //   // start:"bottom 100%",
+    //   //   markers:true
+    //   // }
+    // })
+    // Create a timeline for the plane animation
+    const planeTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#earth",
+        start: "top 70%",
+        end: "bottom -150%",
+        scrub: 2,
       }
-    );
+    });
+
+    planeTimeline
+      .to(".plane", {
+        y: 3050,
+        duration: 10,
+      })
+      .to(".plane", {
+        rotate: -45,
+        duration: 1,
+      })
+      // .to('.plane',{
+      //   x:250,
+      //   duration:2,
+      //   // scrollTrigger:{
+
+      //   // }
+      // })
+
 
     gsap.to("#earth", {
       scale: 0.7,
@@ -41,11 +77,11 @@ export default function Home() {
       },
     });
 
-    // gsap.to("#earth", {
-    //   rotate: 7200,
-    //   duration: 1000,
-    //   repeat: -1,
-    // });
+    gsap.to("#earth", {
+      rotate: 7200,
+      duration: 1000,
+      repeat: -1,
+    });
   });
   return (
     <>

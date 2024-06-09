@@ -83,7 +83,9 @@ export default function Projects() {
                     <li className='list-disc '>follow user</li>
                 </ul>
             </div>
+            <a href='https://www.linkedin.com/feed/update/urn:li:activity:7204103308611850240/'>
             <button className='text-yellow-500 w-24 border-yellow-500 active:bg-yellow-500 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
+            </a>
         </div>
     </div>
     <div className='project w-screen overflow-x-hidden h-80 justify-start gap-4 flex flex-row'>
@@ -98,7 +100,9 @@ export default function Projects() {
                     <li className='list-disc '>Finance management</li>
                 </ul>
             </div>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7181125711003348992/">
             <button className='text-red-600 w-24 border-red-600 active:bg-red-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
+            </a>
         </div>
         <div className='bg-black w-28 self-center h-32 relative left-12 rounded-md' style={{
        
@@ -130,7 +134,9 @@ export default function Projects() {
                     <li className='list-disc '>Ceremony Schedual</li>
                 </ul>
             </div>
+            <a href="https://jenilparmar.github.io/wedding--2/">
             <button className='text-green-600 w-24 border-green-600 active:bg-green-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
+            </a>
         </div>
     </div>
     <div className='project w-screen overflow-x-hidden h-80 justify-start gap-4 flex flex-row'>
@@ -145,7 +151,9 @@ export default function Projects() {
                     <li className='list-disc '>Contact us</li>
                 </ul>
             </div>
+            <a href="https://exlavya.vercel.app/">
             <button className='text-pink-600 w-24 border-pink-600 active:bg-pink-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>Visit here</button>
+            </a>
         </div>
         <div className='bg-black w-28 self-center h-32 relative left-12 rounded-md'
         style={{
@@ -174,7 +182,9 @@ export default function Projects() {
                     <li className='list-disc '>Online Visit form</li>
                 </ul>
             </div>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7165248291171885057/">
             <button className='text-blue-600 w-24 border-blue-600 active:bg-blue-600 transition-active duration-100 active:text-black self-center border-2 rounded-lg p-0.5 h-8 text-nowrap text-sm'>See Demo</button>
+            </a>
         </div>
     </div>
 

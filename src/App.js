@@ -5,6 +5,7 @@ import NameIntro from "./Components/NameIntro";
 import Features from "./Components/Features";
 import Astronous from "./Components/Astronous";
 import Projects from "./Components/Projects";
+import Connect from "./Components/Connect";
 
 export default function App() {
  
@@ -18,6 +19,7 @@ export default function App() {
 <Features setState={setContainer} />
 <Astronous container={container}/>
 <Projects/>
+<Connect/>
   </div>
  
   
